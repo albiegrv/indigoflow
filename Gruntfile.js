@@ -13,8 +13,8 @@ module.exports = function(grunt) {
           cwd: "src",
           src: [
             "img/**",
-            "index.html",
-            "form.html"
+            "font/**",
+            "index.html"
           ],
           dest: "build"
         }]
@@ -64,29 +64,29 @@ module.exports = function(grunt) {
       }
     },
 
-    concat: {
-        options: {
-          separator: ';',
-        },
-        dist: {
-          src: ['src/js/tap.min.js', 'src/js/mustache.min.js', 'src/js/burger.js', 'src/js/range.js', 'src/js/addtraveller.js', 'src/js/senddata.js'],
-          dest: 'build/js/script.js',
-        },
-      },
+    // concat: {
+    //     options: {
+    //       separator: ';',
+    //     },
+    //     dist: {
+    //       src: ['src/js/tap.min.js', 'src/js/mustache.min.js', 'src/js/burger.js', 'src/js/range.js', 'src/js/addtraveller.js', 'src/js/senddata.js'],
+    //       dest: 'build/js/script.js',
+    //     },
+    //   },
 
-    minified : {
-      files: {
-        src: [
-        'build/js/*.js'
-        ],
-        dest: 'build/js/'
-      },
-      options: {
-        sourcemap: false,
-        allinone: true,
-        dest_filename: "script.min.js"
-      }
-    },
+    // minified : {
+    //   files: {
+    //     src: [
+    //     'build/js/*.js'
+    //     ],
+    //     dest: 'build/js/'
+    //   },
+    //   options: {
+    //     sourcemap: false,
+    //     allinone: true,
+    //     dest_filename: "script.min.js"
+    //   }
+    // },
 
     imagemin: {
       images: {
@@ -119,8 +119,8 @@ module.exports = function(grunt) {
     "cmq",
     "postcss",
     "cssmin",
-    "concat",
-    "minified",
+    //"concat",
+    //"minified",
     //"imagemin",
     ]);
 
