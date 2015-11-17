@@ -1,0 +1,39 @@
+//
+//
+//
+
+.main-header {
+  @include container();
+  padding-top: 30px;
+  background: white;
+
+  &__logo {
+    text-align: center;
+  }
+
+  &__logo img {
+    width: 180px;
+    height: 180px;
+  }
+
+  &__link {
+    text-align: center;
+  }
+
+  &__link a {
+    font-family: 'bravorgregular';
+    font-size: 33px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $indigo;
+  }
+
+  &__link a:hover {
+    color: #25437b;
+  }
+
+  &__link a:active {
+    opacity: 0.3;
+  }
+}
+

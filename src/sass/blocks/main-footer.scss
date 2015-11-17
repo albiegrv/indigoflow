@@ -1,0 +1,42 @@
+//
+//
+//
+
+.main-footer {
+  @include container();
+  //padding-bottom: 60px;
+  background: white;
+  //font-size: 0;
+  text-align: center;
+
+  &__tel {
+    font-family: 'bravorgregular';
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $indigo;
+  }
+
+  & a {
+    //display: inline-block;
+    //vertical-align: top;
+    //padding: 10px 10px;
+
+    font-family: 'bravorgregular';
+    font-size: 20px;
+    //font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $indigo;
+  }
+
+  & a:hover{
+    color: white;
+    background: $indigo;
+  }
+
+  & a:active {
+    opacity: 0.3;
+  }
+}
+

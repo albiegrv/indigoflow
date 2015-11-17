@@ -8,69 +8,22 @@
     font-style: normal;
 }
 
-// * {
-//   box-sizing: border-box; 
-// }
-
-// .container {
-//   height: 100vh;
-// }
-
-.main-header {
-  @include container();
-  text-align: center;
-  font-family: 'bravorgregular';
-  font-size: 40px;
-  text-transform: uppercase;
-  color: #0a2059;
-
-  img {
-    width: 150px;
-    height: auto;
-  }
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://fonts.gstatic.com/s/ptsans/v8/peba9qoUFrLz1OT0H-PYjALUuEpTyoUstqEm5AMlJo4.ttf) format('truetype');
 }
 
-.main-block {
-  @include container();
-  text-align: center;
-  background: #c5d0e0;
-
-  & p {
-    margin: 0 auto;
-    width: 100px;
-    font-family: 'bravorgregular';
-    font-size: 25px;
-    text-transform: uppercase;
-    color: white;
-  }
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPsDdSZkkecOE1hvV7ZHvhyU.ttf) format('truetype');
 }
 
-.main-footer {
-  @include container();
-  font-family: 'bravorgregular';
-  font-size: 25px;
-  text-transform: uppercase;
-  color: white;
-  text-align: right;
-  background: #c5d0e0;
-
-  & p {
-    margin: 0;
-  }
-
-  & a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-  }
-
-  & a:hover {
-    background: #0a2059;
-    color: white;
-  }
-
-  & a:active {
-    opacity: 0.3;
-  }
+.main-page {
+  background: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }

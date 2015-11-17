@@ -103,10 +103,10 @@ module.exports = function(grunt) {
     watch: {
       style: {
         files: ['sass/**/*.scss'],
-        tasks: ['sass', 'postcss'],
+        tasks: ['sass', 'postcss', 'postcss', 'cssmin'],
         options: {
-          spawn: false,
-          livereload: true
+          spawn: false//,
+          //livereload: true
         }
       }
     }

@@ -1,0 +1,28 @@
+//
+//
+//
+
+.main-nav {
+  @include container();
+  background: white;
+  font-size: 0;
+  text-align: center;
+
+  & a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 10px;
+
+    font-family: 'bravorgregular';
+    font-size: 23px;
+    //font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $indigo;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+  }
+}
+
